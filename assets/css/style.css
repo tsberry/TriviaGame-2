@@ -1,0 +1,38 @@
+body {
+    background-color: gray;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: yellow;
+}
+
+header {
+    color: blue;
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-family: 'Rammetto One', cursive;
+}
+
+/* #timer {
+    font-size: 40px; */
+}
+
+.question {
+    /* font-size: 40px; */
+    margin: 20px;
+}
+
+.q-header {
+    margin: 5px;
+}
+
+#result {
+    /* font-size: 40px; */
+    margin: 20px;
+}
