@@ -34,6 +34,20 @@ header {
     font-family: 'Rammetto One', cursive;
 }
 
+#start {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+#start:hover {
+    padding: 0px;
+    background-color: #CCA103;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
 .question {
     margin: 40px;
 }

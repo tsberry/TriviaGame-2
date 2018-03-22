@@ -33,11 +33,12 @@ var countdown;
 function start() {
     correct = 0;
     curr = 0;
-    time = 5;
+    time = 10;
+    $("#start").empty();
     $("#timer").html("Time Remaining: <span id='time'>" + time + "</span> Seconds");
     $("#questions").html(questions[curr].display());
     $("#results").empty();
-    countdown = setTimeout(check, 5000);
+    countdown = setTimeout(check, 10000);
 
 }
 
@@ -51,10 +52,10 @@ function nextQuestion() {
     $("#image").empty();
     if (curr < questions.length - 1) {
         curr++;
-        time = 5;
+        time = 10;
         $("#timer").html("Time Remaining: <span id='time'>" + time + "</span> Seconds");
         $("#questions").html(questions[curr].display());
-        countdown = setTimeout(check, 5000);
+        countdown = setTimeout(check, 10000);
     }
     else {
         $("#timer").empty();
@@ -94,6 +95,6 @@ setInterval(function () {
     }
 }, 1000);
 
-start();
 $("body").on("click", ".answer", check);
+$("body").on("click", "#start", start);
 $("body").on("click", "#restart", start);
