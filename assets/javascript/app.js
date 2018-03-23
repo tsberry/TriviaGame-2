@@ -5,7 +5,7 @@ function Question(q, a, c, id) {
     this.qid = id;
 
     this.display = function () {
-        var questionDisplay = $(`<div class="question"'" id="${this.qid }">`);
+        var questionDisplay = $(`<div class="question" id="${this.qid }">`);
         questionDisplay.append(`<div class="q-header">${this.question}</div>`);
         var answersDisplay = questionDisplay.append(`<div id="${this.qid}-answers"></div>`);
         for (var i = 0; i < this.answers.length; i++) {
